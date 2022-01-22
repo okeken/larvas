@@ -17,7 +17,7 @@ interface Props {
 
 const AppHeaderContainer = styled(Flex)`
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between ;
   padding: 24px;
   width: 100%;
   border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};

@@ -27,10 +27,6 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
     icon: 'Earn',
     items: [
       {
-        label: t('Farms'),
-        href: '/farms',
-      },
-      {
         label: t('Pools'),
         href: '/pools',
       },
@@ -55,38 +51,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
       },
     ],
   },
-  {
-    label: '',
-    href: '/info',
-    icon: 'More',
-    hideSubNav: true,
-    items: [
-      {
-        label: t('Info'),
-        href: '/info',
-      },
-      {
-        label: t('IFO'),
-        href: '/ifo',
-      },
-      {
-        type: DropdownMenuItemType.DIVIDER,
-      },
-      {
-        type: DropdownMenuItemType.DIVIDER,
-      },
-      {
-        label: t('Blog'),
-        href: '',
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
-      {
-        label: t('Docs'),
-        href: '',
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
-    ],
-  },
+
 ]
 
 export default config

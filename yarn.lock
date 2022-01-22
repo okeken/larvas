@@ -10540,10 +10540,10 @@ language-tags@^1.0.5:
   dependencies:
     language-subtag-registry "~0.3.2"
 
-larvas-ui@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/larvas-ui/-/larvas-ui-0.0.6.tgz#233a339a7267f1868c4e2c5efae6b66417324b17"
-  integrity sha512-dJkDc/Xf5qqegur8rtC83co/BfrhS8RrvAjz+yGxmAp7PSTsxwu/XBtCIwMd10WFoYMoYtGp3JlgXKoU2i2SLQ==
+larvas-ui@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/larvas-ui/-/larvas-ui-0.0.9.tgz#9f10df8db64eb353a2cba2d77db2d35189a5d969"
+  integrity sha512-diDpk9bK2LH9WBj9WHuFHHeBYTyzJk7M9bMhcAXeIH2BdxnXhqrmivrTTOMQjIfx/kTEi7kWotNbuU8SFM2VgQ==
   dependencies:
     "@popperjs/core" "^2.9.2"
     "@types/styled-system" "^5.1.10"

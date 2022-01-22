@@ -5,7 +5,7 @@ import { Menu as UikitMenu } from 'larvas-ui'
 import { languageList } from 'config/localization/languages'
 import { useTranslation } from 'contexts/Localization'
 // import PhishingWarningBanner from 'components/PhishingWarningBanner'
-import useTheme from 'hooks/useTheme'
+//import useTheme from 'hooks/useTheme'
 import { usePriceCakeBusd } from 'state/farms/hooks'
 // import { usePhishingBannerManager } from 'state/user/hooks'
 import config from './config/config'
@@ -15,7 +15,7 @@ import { getActiveMenuItem, getActiveSubMenuItem } from './utils'
 import { footerLinks } from './config/footerConfig'
 
 const Menu = (props) => {
-  const { isDark, toggleTheme } = useTheme()
+ // const { isDark, toggleTheme } = useTheme()
   const cakePriceUsd = usePriceCakeBusd()
   const { currentLanguage, setLanguage, t } = useTranslation()
   const { pathname } = useRouter()
@@ -31,8 +31,8 @@ const Menu = (props) => {
       }}
       userMenu={<UserMenu />}
       globalMenu={<GlobalSettings />}
-      isDark={isDark}
-      toggleTheme={toggleTheme}
+      isDark={true}
+    //  toggleTheme={toggleTheme}
       currentLang={currentLanguage.code}
       langs={languageList}
       setLang={setLanguage}
