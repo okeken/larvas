@@ -6,7 +6,6 @@ import ConnectWalletButton from 'components/ConnectWalletButton'
 import { useWeb3React } from '@web3-react/core'
 import SunburstSvg from './SunburstSvg'
 
-
 const BgWrapper = styled.div`
   overflow: hidden;
   position: absolute;
@@ -34,7 +33,6 @@ const Wrapper = styled(Flex)`
   justify-content: center;
   overflow: hidden;
 `
-
 
 const Footer = () => {
   const { t } = useTranslation()

@@ -256,7 +256,7 @@ const Pools: React.FC = () => {
             <Heading scale="md" color="text">
               {t('Just stake some tokens to earn.')}
             </Heading>
-            <Heading  scale="md" color="text">
+            <Heading scale="md" color="text">
               {t('Coming Soon...')}
             </Heading>
           </Flex>

@@ -357,7 +357,6 @@ export default function Swap() {
   return (
     <Page removePadding={false} hideFooterOnDesktop={false}>
       <Flex width="100%" justifyContent="center" position="relative">
-      
         <Flex flexDirection="column">
           <StyledSwapContainer $isChartExpanded={false}>
             <StyledInputCurrencyWrapper mt={false ? '24px' : '0'}>
@@ -365,7 +364,7 @@ export default function Swap() {
                 <CurrencyInputHeader
                   title={t('Swap')}
                   subtitle={t('Trade tokens in an instant')}
-                  setIsChartDisplayed={()=>{}}
+                  setIsChartDisplayed={() => {}}
                   isChartDisplayed={false}
                 />
                 <Wrapper id="swap-page" style={{ minHeight: '412px' }}>
@@ -567,11 +566,10 @@ export default function Swap() {
               )}
             </StyledInputCurrencyWrapper>
           </StyledSwapContainer>
-        
-            <Box display={['none', null, null, 'block']} width="100%" height="100%">
-              <Footer variant="side" />
-            </Box>
-          
+
+          <Box display={['none', null, null, 'block']} width="100%" height="100%">
+            <Footer variant="side" />
+          </Box>
         </Flex>
       </Flex>
     </Page>
