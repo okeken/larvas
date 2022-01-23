@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { Text, PancakeToggle, Toggle, Flex, Modal, InjectedModalProps } from 'larvas-ui'
-// import {  ThemeSwitcher } from 'larvas-ui'
+import { Text, PancakeToggle, Toggle, Flex, Modal, InjectedModalProps, ThemeSwitcher } from 'larvas-ui'
 import {
   useAudioModeManager,
   useExpertModeManager,
@@ -35,8 +34,7 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss }) => {
   const { onChangeRecipient } = useSwapActionHandlers()
 
   const { t } = useTranslation()
-  const { theme } = useTheme()
-  // const { isDark, toggleTheme } = useTheme()
+  const { theme, isDark, toggleTheme } = useTheme()
 
   if (showConfirmExpertModal) {
     return (
@@ -69,13 +67,13 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss }) => {
     >
       <ScrollableContainer>
         <Flex pb="24px" flexDirection="column">
-          {/* <Text bold textTransform="uppercase" fontSize="12px" color="secondary" mb="24px">
+          <Text bold textTransform="uppercase" fontSize="12px" color="secondary" mb="24px">
             {t('Global')}
-          </Text> */}
-          {/* <Flex justifyContent="space-between">
+          </Text>
+          <Flex justifyContent="space-between">
             <Text mb="24px">{t('Dark mode')}</Text>
             <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
-          </Flex> */}
+          </Flex>
           <GasSettings />
         </Flex>
         <Flex pt="24px" flexDirection="column" borderTop={`1px ${theme.colors.cardBorder} solid`}>
