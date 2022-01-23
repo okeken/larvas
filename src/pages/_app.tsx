@@ -52,10 +52,7 @@ function MyApp(props: AppProps) {
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1, viewport-fit=cover"
         />
-        <meta
-          name="description"
-          content=""
-        />
+        <meta name="description" content="" />
         <meta name="theme-color" content="#1FC7D4" />
         <meta name="twitter:image" content="https://larvastoken.com/wp-content/uploads/2021/12/cropped-photo_2021-12-24_13-26-04__2_-removebg-preview-2-1-1.png" />
         <meta
@@ -63,10 +60,7 @@ function MyApp(props: AppProps) {
           content=""
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Larvas"
-        />
+        <meta name="twitter:title" content="Larvas" />
         <title>Larvas </title>
       </Head>
       <Providers store={store}>

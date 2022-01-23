@@ -1,14 +1,5 @@
 import React, { useState } from 'react'
-import {
-  CardProps,
-  CardHeader,
-  Card,
-  Flex,
-  Heading,
-  IconButton,
-  ChevronUpIcon,
-  ChevronDownIcon,
-} from 'larvas-ui'
+import { CardProps, CardHeader, Card, Flex, Heading, IconButton, ChevronUpIcon, ChevronDownIcon } from 'larvas-ui'
 
 interface CollapsibleCardProps extends CardProps {
   initialOpenState?: boolean

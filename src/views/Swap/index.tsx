@@ -594,11 +594,7 @@ export default function Swap() {
               )}
             </StyledInputCurrencyWrapper>
           </StyledSwapContainer>
-          {isChartExpanded && (
-            <Box display={['none', null, null, 'block']} width="100%" height="100%">
-              <Footer variant="side" />
-            </Box>
-          )}
+        
         </Flex>
       </Flex>
     </Page>

@@ -1,7 +1,6 @@
 {
-  "name": "pancake-frontend",
+  "name": "larvas-frontend",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "analyze": "ANALYZE=true yarn build",
     "dev": "next dev",

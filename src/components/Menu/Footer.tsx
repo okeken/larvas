@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex,  } from 'larvas-ui'
-
+import { Flex } from 'larvas-ui'
 
 const Wrapper = styled.div<{ $isSide: boolean }>`
   width: 100%;
@@ -18,18 +17,11 @@ const Wrapper = styled.div<{ $isSide: boolean }>`
   }
 `
 
-
 type FooterVariant = 'default' | 'side'
 
 const Footer: React.FC<{ variant?: FooterVariant }> = ({ variant = 'default' }) => {
   const isSide = variant === 'side'
-  return (
-    <Wrapper $isSide={isSide}>
-  
-      {isSide && <Flex flexGrow={1} />}
-   
-    </Wrapper>
-  )
+  return <Wrapper $isSide={isSide}>{isSide && <Flex flexGrow={1} />}</Wrapper>
 }
 
 export default Footer
