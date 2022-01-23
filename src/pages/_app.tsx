@@ -57,7 +57,7 @@ function MyApp(props: AppProps) {
           content=""
         />
         <meta name="theme-color" content="#1FC7D4" />
-        <meta name="twitter:image" content="https://pancakeswap.finance/images/hero.png" />
+        <meta name="twitter:image" content="https://larvastoken.com/wp-content/uploads/2021/12/cropped-photo_2021-12-24_13-26-04__2_-removebg-preview-2-1-1.png" />
         <meta
           name="twitter:description"
           content=""
@@ -86,11 +86,7 @@ function MyApp(props: AppProps) {
         id="google-tag"
         dangerouslySetInnerHTML={{
           __html: `
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer', '${process.env.NEXT_PUBLIC_GTAG}');
+            
           `,
         }}
       />

@@ -58,6 +58,15 @@
       "decimals": 18,
       "logoURI": "https://pancakeswap.finance/images/tokens/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82.png"
     },
+
+    {
+      "name": "Larvas",
+      "symbol": "larvas",
+      "address": "0xDaB45B23f5334D3C86e198d1b0d4359082D5874a",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://larvastoken.com/wp-content/uploads/2021/12/cropped-photo_2021-12-24_13-26-04__2_-removebg-preview-2-1-1.png"
+    },
     {
       "name": "Venus",
       "symbol": "XVS",
@@ -130,5 +139,6 @@
       "decimals": 18,
       "logoURI": "https://pancakeswap.finance/images/tokens/0xa7f552078dcc247c2684336020c03648500c6d9f.png"
     }
+   
   ]
 }

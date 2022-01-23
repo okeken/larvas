@@ -5,23 +5,18 @@ import {
   LogoutIcon,
   useModal,
   UserMenu as UIKitUserMenu,
-  UserMenuDivider,
   UserMenuItem,
 } from 'larvas-ui'
 import useAuth from 'hooks/useAuth'
-import { useRouter } from 'next/router'
 import { useProfile } from 'state/profile/hooks'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import { useGetBnbBalance } from 'hooks/useTokenBalance'
 import { useTranslation } from 'contexts/Localization'
-import { nftsBaseUrl } from 'views/Nft/market/constants'
 import { FetchStatus } from 'config/constants/types'
 import WalletModal, { WalletView, LOW_BNB_BALANCE } from './WalletModal'
-import ProfileUserMenuItem from './ProfileUserMenutItem'
 import WalletUserMenuItem from './WalletUserMenuItem'
 
 const UserMenu = () => {
-  const router = useRouter()
   const { t } = useTranslation()
   const { account } = useWeb3React()
   const { logout } = useAuth()
@@ -29,7 +24,6 @@ const UserMenu = () => {
   const { isInitialized, isLoading, profile } = useProfile()
   const [onPresentWalletModal] = useModal(<WalletModal initialView={WalletView.WALLET_INFO} />)
   const [onPresentTransactionModal] = useModal(<WalletModal initialView={WalletView.TRANSACTIONS} />)
-  const hasProfile = isInitialized && !!profile
   const avatarSrc = profile?.nft?.image?.thumbnail
   const hasLowBnbBalance = fetchStatus === FetchStatus.Fetched && balance.lte(LOW_BNB_BALANCE)
 
@@ -43,12 +37,6 @@ const UserMenu = () => {
       <UserMenuItem as="button" onClick={onPresentTransactionModal}>
         {t('Transactions')}
       </UserMenuItem>
-      <UserMenuDivider />
-      <UserMenuItem as="button" onClick={() => router.push(`${nftsBaseUrl}/profile/${account.toLowerCase()}`)}>
-        {t('Your NFTs')}
-      </UserMenuItem>
-      <ProfileUserMenuItem isLoading={isLoading} hasProfile={hasProfile} />
-      <UserMenuDivider />
       <UserMenuItem as="button" onClick={logout}>
         <Flex alignItems="center" justifyContent="space-between" width="100%">
           {t('Disconnect')}
