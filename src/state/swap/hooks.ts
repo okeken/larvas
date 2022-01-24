@@ -41,7 +41,9 @@ import fetchDerivedPriceData from './fetch/fetchDerivedPriceData'
 import { pairHasEnoughLiquidity } from './fetch/utils'
 
 export function useSwapState(): AppState['swap'] {
-  return useSelector<AppState, AppState['swap']>((state) => state.swap)
+  return useSelector<AppState, AppState['swap']>((state) => {
+    return state.swap
+  })
 }
 
 export function useSwapActionHandlers(): {
