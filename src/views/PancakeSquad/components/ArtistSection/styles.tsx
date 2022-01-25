@@ -5,7 +5,7 @@ export const StyledArtistSectionContainer = styled(Flex)<{ $isDark: boolean }>`
   position: relative;
   background: ${({ $isDark }) =>
     $isDark
-      ? `linear-gradient(90deg, #313D5C 0%, #3D2A54 100%);`
+      ? `#13111A;`
       : `linear-gradient(90deg, #faf9fa 0%, #d7caec 100%);`};
 `
 
