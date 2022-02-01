@@ -79,8 +79,7 @@ function MyApp(props: AppProps) {
         strategy="afterInteractive"
         id="google-tag"
         dangerouslySetInnerHTML={{
-          __html: `
-            
+          __html: `         
           `,
         }}
       />

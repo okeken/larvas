@@ -13,7 +13,7 @@ import { Store } from '@reduxjs/toolkit'
 
 const ThemeProviderWrapper = (props) => {
   const [isDark] = useThemeManager()
-  return <ThemeProvider theme={isDark ? dark : light} {...props} />
+  return <ThemeProvider theme={dark} {...props} />
 }
 
 const Providers: React.FC<{ store: Store }> = ({ children, store }) => {
